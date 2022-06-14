@@ -1,18 +1,121 @@
-<style>
-@body {
-    font-family: 'Roboto', sans-serif; 
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@media (max-width: 384px) {
+    .section {
+        width: 50%;
+    }
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #191919;
+    background-color: #e7e5e1;
 }
-* {
-    box-sizing: border-box;
-    border: 1px solid rgb(44, 40, 40);
-  }
-  html {
-    scroll-behavior: smooth; 
-  }
-  main {
-      display: block;
-  }
-</style>
+
+.header,
+.footer {
+    background-color: #869886;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.section {
+    width: 50%;
+    padding: 20px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background-color: #869886;
+}
+
+.nav-list, 
+.contacts-list,
+.footer-list {
+    list-style: none;
+}
+
+.courses-list,
+.education-list,
+.languages-list {
+    list-style: square;
+}
+
+.contacts-list {
+    line-height: 30px;
+}
+
+.nav-list,
+.footer-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item a {
+    color: #e7e5e1;
+    text-decoration: none;
+    cursor: grab;
+    transition: color 0.5s;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+}
+
+.nav-item a:link {
+    padding: 2px;
+    color: dimgray;
+}
+
+.nav-item a:hover {
+    color: #191919;
+}
+
+.my-photo {
+    border-radius: 100%;
+}
+
+.contacts-item img {
+    width: 16px;
+}
+
+.github {
+    width: 40px;
+}
+
+.rsschool {
+    width: 100px;
+}
+    
