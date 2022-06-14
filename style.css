@@ -7,6 +7,12 @@
 }
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    border: 1px solid rgb(44, 40, 40);
+  }
+  html {
+    scroll-behavior: smooth; 
+  }
+  main {
+      display: block;
   }
 </style>
